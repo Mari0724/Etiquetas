@@ -1,0 +1,32 @@
+body {
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(39, 37, 97, 0.906) 0%, rgba(123,67,137,1) 50%, rgba(255,140,246,1) 100%);
+}
+
+h1 {
+    color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    margin-top: 250px; /* Mueve el título más abajo */
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    margin-top: 100px; /* Mueve los cuadros más abajo */
+}
+
+.box {
+    background-color: rgba(219, 182, 255, 0.425);
+    padding: 20px;
+    margin: 10px;
+    border: rgb(221, 202, 255) 7px solid;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.box a {
+    text-decoration: none;
+    font-size: 18px;
+    color: black;
+}

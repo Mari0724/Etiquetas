@@ -1,0 +1,106 @@
+.container-card {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; /* Permite que los cuadros se distribuyan en varias filas */
+    max-width: 1100px;
+    margin: auto;
+    gap: 35px; /* Espacio entre los cuadros */
+}
+
+.container-card > div {
+    flex: 1 1 calc(33.333% - 40px); /* Ajusta el ancho de cada cuadro al 33% con margen */
+    box-sizing: border-box;
+}
+
+.container-card > div h1 {
+    text-align: center; /* Centra el texto del título */
+    margin: 10px 0; /* Espacio alrededor del título */
+    font-size: 1.5rem; /* Ajusta el tamaño de la fuente según sea necesario */
+    color: rgb(0, 0, 0); /* Color del texto */
+}
+
+.tarjeta {
+    width: 250px; /* Ajusta el ancho */
+    border-radius: 10px; /* Bordes redondeados */
+    padding: 10px; /* Espacio interno */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para dar efecto de profundidad */
+    background-color: #f7f7f728; /* Fondo claro */
+    overflow: hidden;
+}
+
+body {
+    background: rgb(107,0,66);
+    background: linear-gradient(270deg, rgba(107,0,66,1) 0%, rgba(184,0,111,1) 57%, rgba(255,0,153,1) 100%);
+}
+
+.m-4 {
+    margin: 16px;
+    background-color: #F5F5F5;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.mt {
+    background-color: #F5F5F5;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.mt-8 {
+    margin-top: 32px;
+    background-color: #F5F5F5;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.mr-12 {
+    margin-right: 48px;
+    background-color: #F5F5F5;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.mb-16 {
+    margin-bottom: 64px;
+    background-color: #F5F5F5;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.ml-20 {
+    margin-left: 80px;
+    background-color: #F5F5F5;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.p-6 {
+    background-color: #F5F5F5;
+    border-radius: 10px;
+    padding: 24px;
+}
+
+.pt-10 {
+    background-color: #F5F5F5;
+    border-radius: 10px;
+    padding-top: 40px;
+}
+
+.pr-16 {
+    background-color: #F5F5F5;
+    border-radius: 10px;
+    padding-right: 32px;
+}
+
+.pb-20 {
+    background-color: #F5F5F5;
+    border-radius: 10px;
+    padding-bottom: 48px;
+}
+
+.pl-24 {
+    background-color: #F5F5F5;
+    border-radius: 10px;
+    padding-left: 64px;
+}

@@ -1,0 +1,121 @@
+.container-card {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap; /* Permite que los cuadros se distribuyan en varias filas */
+    max-width: 1100px;
+    margin: auto;
+    gap: 35px; /* Espacio entre los cuadros */
+}
+
+.container-card > div {
+    flex: 1 1 calc(33.333% - 40px); /* Ajusta el ancho de cada cuadro al 33% con margen */
+    box-sizing: border-box;
+}
+
+.container-card > div h1 {
+    text-align: center; /* Centra el texto del título */
+    margin: 10px 0; /* Espacio alrededor del título */
+    font-size: 1.5rem; /* Ajusta el tamaño de la fuente según sea necesario */
+    color: rgb(0, 0, 0); /* Color del texto */
+}
+
+.tarjeta {
+    width: 250px; /* Ajusta el ancho */
+    border-radius: 10px; /* Bordes redondeados */
+    padding: 10px; /* Espacio interno */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para dar efecto de profundidad */
+    background-color: #f7f7f728; /* Fondo claro */
+    overflow: hidden;
+}
+
+body {
+    background: rgb(0,107,47);
+    background: linear-gradient(270deg, rgba(0,107,47,0.8882724964985994) 0%, rgba(83,194,127,1) 69%, rgba(140,255,182,1) 100%);
+}
+
+span {
+    display: block;
+    margin-top: 10px;
+    position: relative;
+    z-index: 2;
+}
+
+.transition {
+    color: rgb(67, 1, 94);
+    background-color: #F5F5F5;
+    padding: 20px;
+    border-radius: 10px;
+    transition: width 2s;
+    width: 100px;
+}
+
+.transition:hover {
+    width: 280px;
+}
+
+.property {
+    color: rgb(67, 1, 94);
+    background-color: #F5F5F5;
+    padding: 20px;
+    border-radius: 10px;
+    transition-property: background-color;
+}
+
+.property:hover{
+    color: white;
+    background-color: blue;
+}
+
+.duration {
+    background-color: #F5F5F5;
+    padding: 20px;
+    border-radius: 10px;
+    transition-property: background-color;
+    transition-duration: 1s;
+}
+
+.duration:hover{
+    background-color: rgb(0, 132, 255);
+}
+
+.function {
+    background-color: #F5F5F5;
+    padding: 20px;
+    border-radius: 10px;
+    transition-property: background-color;
+    transition-duration: 2s;
+    transition-timing-function: ease-in;
+}
+
+.function:hover {
+    background-color: rgb(90, 202, 202); 
+}
+
+.delay {
+    background-color: #F5F5F5;
+    padding: 20px;
+    border-radius: 10px;
+    transition-property: background-color;
+    transition-duration: 1s;
+    transition-delay: 0.5s;
+}
+
+.delay:hover {
+    background-color: rgb(255, 207, 167);
+}
+
+.animate-bounce {
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+    background-color: #F5F5F5;
+    border-radius: 10px;
+    transition: transform 0.7s ease;
+}
+
+.animate-bounce:hover {
+    animation-name: rotate;
+    animation-duration: 0.7s;
+    animation-iteration-count: infinite;
+}
+

@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/cuadriculas.css">
+</head>
+<body>
+    <div class="container-card">
+        <div class="tarjeta">
+            <div>
+                <h1>Columnas de cuadrícula</h1>
+                <div class="grid-cols-2">
+                    <div class="grid-item">Elemento 1</div>
+                    <div class="grid-item">Elemento 2</div>
+                    <div class="grid-item">Elemento 3</div>
+                    <div class="grid-item">Elemento 4</div>
+                </div>
+                <span>Columnas: repeat(2, minmax(0, 1fr));</span>
+            </div>
+        </div>
+        <div class="tarjeta">
+            <div>
+                <h1>Filas de cuadrícula</h1>
+                <div class="grid-rows-3">
+                    <div class="grid-item">Fila 1</div>
+                    <div class="grid-item">Fila 2</div>
+                    <div class="grid-item">Fila 3</div>
+                </div>
+                <span>Filas: repeat(3, minmax(0, 1fr))</span>
+            </div>
+        </div>
+        <div class="tarjeta">
+            <div>
+                <h1>Columnas Automáticas</h1>
+                <div class="auto-cols-auto">
+                    <div class="grid-item">Elemento 1</div>
+                    <div class="grid-item">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</div>
+                    <div class="grid-item">Elemento 3</div>
+                </div>
+                <span>Columnas: auto</span>
+            </div>
+        </div>
+        <div class="tarjeta">
+            <h1>Filas automáticas</h1>
+            <div class="auto-rows-auto">
+                <div class="grid-item">Elemento 1</div>
+                <div class="grid-item">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+                <div class="grid-item">Elemento 3</div>
+                <div class="grid-item">Elemento 4</div>
+            </div>
+            <span>Filas: auto</span>
+        </div>
+        <div class="tarjeta">
+            <h1>Columnas de cuadrícula</h1>
+            <div class="grid-cols-4">
+                <div class="grid-item">1</div>
+                <div class="grid-item">2</div>
+                <div class="grid-item">3</div>
+                <div class="grid-item">4</div>
+                <div class="grid-item">5</div>
+                <div class="grid-item">6</div>
+                <div class="grid-item">7</div>
+                <div class="grid-item">8</div>
+            </div>
+            <span>Filas: 4, minmax(0, 1fr)</span>
+        </div>
+        <div class="tarjeta">
+            <h1>Filas de cuadrícula</h1>
+            <div class="grid-rows-3">
+                <div class="grid-item">Elemento 1</div>
+                <div class="grid-item">Elemento 2</div>
+                <div class="grid-item">Elemento 3</div>
+            </div>
+            <span>Filas: 3, minmax(0, 1fr)</span>
+        </div>
+        <div class="tarjeta">
+            <h1>Flujo automático de cuadrícula</h1>
+            <div class="grid-flow-col">
+                <div class="grid-item"> 1</div>
+                <div class="grid-item"> 2</div>
+                <div class="grid-item">Elemento 3</div>
+            </div>
+            <span>Flujo: colum</span>
+        </div>
+        <div class="tarjeta">
+            <h1>Columnas Automáticas de Cuadrícula</h1>
+            <div class="grid-cols-3-auto">
+                <div class="grid-item">Elemento 1</div>
+                <div class="grid-item">Elemento 2</div>
+                <div class="grid-item">Elemento 3</div>
+            </div>
+            <span>Columnas: grid-auto-columns: repeat(3, minmax(0, 1fr))</span>
+        </div>
+        <div class="tarjeta">
+            <h1>Filas automáticas de cuadrícula</h1>
+            <div class="grid-rows-3-auto">
+                <div class="grid-item">Elemento 1</div>
+                <div class="grid-item">Elemento 2</div>
+                <div class="grid-item">Elemento 3</div>
+            </div>
+            <span>Filas: grid-auto-rows: repeat(3, minmax(0, 1fr))</span>
+        </div>
+        <div class="tarjeta">
+            <h1>Espacio entre elementos</h1>
+            <div class="gap-4">
+                <div class="grid-item">Elemento 1</div>
+                <div class="grid-item">Elemento 2</div>
+                <div class="grid-item">Elemento 3</div>
+            </div>            
+            <span>Espacio: 30px</span>
+        </div>
+        <div class="tarjeta">
+            <h1>Espacio entre Columnas</h1>
+            <div class="gap-x-4">
+                <div class="column-item">Columna 1</div>
+                <div class="column-item">Columna 2</div>
+                <div class="column-item">Columna 3</div>
+            </div>
+            <span>Espacio: 1rem</span>
+        </div>
+        <div class="tarjeta">
+            <h1>Espacio entre Filas</h1>
+            <div class="gap-y-4">
+                <div class="row-item">Fila 1</div>
+                <div class="row-item">Fila 2</div>
+                <div class="row-item">Fila 3</div>
+            </div>
+            <span>Espacio: 3rem</span>
+        </div>        
+    </div>
+</body>
+</html>

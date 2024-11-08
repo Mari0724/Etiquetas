@@ -1,0 +1,252 @@
+@import url('./estructura.css');
+
+.transform {
+    background-color: #F5F5F5;
+    border-radius: 10px;
+    transform: rotate(45deg); /* Rotación de 45 grados */
+    font-size: 0.8em;
+    width: 100px;
+    margin: 20px auto;
+    padding: 10px;
+    text-align: center;
+}
+
+.origin-center {
+    width: 100px;
+    height: 100px;
+    margin: 20px auto;
+    background-color: #F5F5F5;
+    border-radius: 10px;
+    transform-origin: center; /* Centro del elemento */
+    animation: rotateAndScale 2s ease-in-out infinite; /* Animación de rotación y escala */
+}
+
+@keyframes rotateAndScale {
+    0% {
+        transform: scale(1) rotate(0deg); /* Tamaño normal, sin rotación */
+    }
+    50% {
+        transform: scale(1.5) rotate(180deg); /* Escalado y rotación a la mitad */
+    }
+    100% {
+        transform: scale(1) rotate(360deg); /* Regreso al estado original */
+    }
+}
+
+.scale {
+    width: 100px;
+    height: 100px;
+    margin: 10px auto;
+    background-color: #F5F5F5;
+    border-radius: 10px;
+    text-align: center;
+    line-height: 100px;
+    transition: transform 0.3s ease; /* Suaviza la transición */
+}
+
+.scale:hover {
+    transform: scale(2.5); /* Escala al 150% cuando se pasa el mouse */
+}
+
+.rotate {
+    width: 100px;
+    height: 100px;
+    margin: 10px auto;
+    background-color: #F5F5F5;
+    border-radius: 10px;
+    text-align: center;
+    transform: rotate(90deg);
+}
+
+.skew {
+    width: 100px;
+    height: 100px;
+    margin: 10px auto;
+    background-color: #F5F5F5;
+    border-radius: 10px;
+    text-align: center;
+    transform: skewX(30deg);
+}
+
+.translate {
+    width: 100px;
+    height: 100px;
+    margin: 10px auto;
+    background-color: #F5F5F5;
+    border-radius: 10px;
+    text-align: center;
+    line-height: 100px;
+    transition: transform 0.3s ease; /* Suaviza la transición */
+}
+
+.translate:hover {
+    transform: translateX(-10px); /* Desplaza el elemento 4 píxeles hacia la izquierda al pasar el mouse */
+}
+
+.change {
+    width: 100px;
+    height: 100px;
+    margin: 10px auto;
+    background-color: #F5F5F5;
+    border-radius: 10px;
+    text-align: center;
+    line-height: 100px;
+    will-change: transform; /* Optimiza para futuras transformaciones */
+    transition: transform 0.3s ease; /* Agrega una transición para suavizar el cambio */
+}
+
+.change:hover {
+    transform: scale(1.2); /* Escala el elemento al pasar el mouse */
+}
+
+.visible {
+    width: 100px;
+    height: 100px;
+    margin: 10px auto;
+    background-color: #F5F5F5;
+    border-radius: 10px;
+    text-align: center;
+    line-height: 100px;
+    font-weight: bold;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    backface-visibility: hidden; /* Oculta la parte trasera */
+}
+
+.visible:hover {
+    transform: rotateY(180deg); /* Rota el elemento 180 grados en el eje Y */
+}
+
+.clip {
+    width: 100px;
+    height: 100px;
+    margin: 10px auto;
+    background-color: #F5F5F5;
+    border-radius: 10px;
+    clip-path: polygon(0 0, 100% 0, 100% 75%, 0 100%);
+}
+
+.box-border {
+    width: 100px;
+    height: 100px;
+    margin: 10px auto;
+    background-color: #F5F5F5;
+    border-radius: 10px;
+    border: 5px solid #000;
+    transform-box: border-box;
+    transition: transform 0.3s;
+}
+
+.box-border:hover {
+    transform: scale(1.1) rotate(10deg);
+}
+
+.origin-left {
+    width: 150px;
+    height: 100px;
+    border-radius: 10px;
+    background-color: #F5F5F5;
+    margin: 20px;
+    transform-origin: left;
+    transition: transform 0.3s;
+}
+
+.origin-left:hover {
+    transform: scale(1.2);
+}
+
+.origin-top {
+    width: 150px;
+    height: 100px;
+    border-radius: 10px;
+    background-color: #F5F5F5;
+    margin: 20px;
+    transform-origin: top;
+    transition: transform 0.3s;
+}
+
+.origin-top:hover {
+    transform: scale(1.2);
+}
+
+.origin-bottom {
+    width: 150px;
+    height: 100px;
+    border-radius: 10px;
+    background-color: #95cc3c;
+    margin: 20px;
+    transform-origin: bottom;
+    transition: transform 0.3s;
+}
+
+.origin-bottom:hover {
+    transform: scale(1.2);
+}
+
+
+
+
+
+.backdrop-opacity {
+    background-color: rgba(245, 245, 245, 0.6); /* Fondo semitransparente */
+    border-radius: 10px;
+    padding: 20px;
+    filter: opacity(500%); 
+   
+}
+
+.backdrop-blur {
+    background-color: rgba(245, 245, 245, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    filter: blur(8px); 
+}
+
+.backdrop-brightness {
+    background-color: rgba(245, 245, 245, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    filter: brightness(45%);
+}
+
+.backdrop-contrast {
+    background-color: rgba(245, 245, 245, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    backdrop-filter: contrast(20%);
+}
+
+.backdrop-grayscale {
+    background-color: rgba(245, 245, 245, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    backdrop-filter: grayscale(10.2%);
+}
+
+.backdrop-hue-rotate {
+    background-color: rgba(245, 245, 245, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    backdrop-filter: hue-rotate(900deg);
+}
+
+.backdrop-invert {
+    background-color: rgba(245, 245, 245, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    backdrop-filter: invert(100%);
+}
+
+.backdrop-saturate {
+    background-color: rgba(245, 245, 245, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    backdrop-filter: saturate(200%);
+}
+
+.backdrop-sepia {
+    background-color: rgba(245, 245, 245, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    backdrop-filter: sepia(100%);
+}
